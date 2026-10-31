@@ -1,0 +1,54 @@
+
+name: ekrushi_app
+description: "e-krushi — AI-powered plant disease detection (Flutter port)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase SMS authentication
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+
+  # Networking
+  http: ^1.5.0
+
+  # Local storage
+  shared_preferences: ^2.5.6
+
+  # Camera and gallery
+  image_picker: ^1.2.4
+
+  # GPS
+  geolocator: ^14.0.1
+
+  # PDF reports
+  pdf: ^3.13.1
+  path_provider: ^2.1.6
+  open_filex: ^4.7.0
+
+  # Sharing and Maps
+  share_plus: ^13.3.1
+  url_launcher: ^6.3.3
+
+  # Image processing
+  image: ^4.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/ekrushi_model.tflite
+    - assets/models/class_names.json
